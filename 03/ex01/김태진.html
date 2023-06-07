@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member_form</title>
+</head>
+
+<body>
+    <table align="center">
+        <td>
+            <table align="left">
+                <tr>
+                    <td>
+                        *표시 항목은 필수 입력 항목입니다.
+                    </td>
+                </tr>
+            </table>
+            <form action="request.do" name="myForm4" method="post">
+                <table >
+                    <tr>
+                        <td align="right">
+                            아이디
+                        </td>
+                        <td>
+                            * <input type="text" name="id">
+                            <input type="button" name="id_check" value="ID중복검사">
+                            <div>
+                                <sub>아이디는 영문,숫자 ....</sub>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            암&emsp;호
+                        </td>
+                        <td>
+                            * <input type="password" name="pass">
+                            <div>
+                                <sub>비밀번호는 4자리이상 ....</sub>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            암호확인
+                        </td>
+                        <td>
+                            * <input type="password" name="pass2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            이&emsp;름
+                        </td>
+                        <td>
+                            * <input type="text" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            대 화 명
+                        </td>
+                        <td>
+                            * <input type="text" name="name2">
+                            <input type="button" name="name2_check" value="중복검사">
+                            <div>
+                                <sub>대화명을 지정하지 안흐시면 ...</sub>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            주민등록번호
+                        </td>
+                        <td>
+                            * <input type="text" name="id_number" size="8">
+                            -
+                            <input type="password" name="id_number2" size="8">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            생년월일
+                        </td>
+                        <td>
+                            * <input type="text" name="yyyy" size="1">
+                            년
+                            <input type="text" name="mm" size="1">
+                            월
+                            <input type="text" name="dd" size="1">
+                            일
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            성&emsp;별
+                        </td>
+                        <td>
+                            * <input type="radio" name="sex" value="m">남자&emsp;
+                            <input type="radio" name="sex" value="w">여자
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            E - mail
+                        </td>
+                        <td>
+                            * <input type="text" name="mail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            메일수신
+                        </td>
+                        <td>
+                            * <input type="radio" name="mail2" value="agree">수신동의
+                            <input type="radio" name="mail2" value="disagree">수신거부
