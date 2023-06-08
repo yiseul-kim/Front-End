@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css 선택자 : class (.으로 호출) 선택자</title>
+
+    <style>
+        .kys {      /* .클래스명 선택자 */
+            background-color: green;
+            color: orange;
+        }
+        .orther {
+            color: blueviolet;
+            background-color: rgb(228, 224, 224);
+        }
+    </style>
+</head>
+<body>
+    <h3> css 선택자 : class 선택자 </h3>
+    <hr color="green">
+    <!--
+        class 선택자 : 태그 내부에 class = "이름" 
+            .이름 { 스타일 적용 }
+            태그가 각각 다르더라도 class속성이 들어간 선택자를 지정해서 스타일을 적용
+    
+    -->
+    
+    <h1 class ="kys">태그 선택자1</h1>
+    <h2>태그 선택자2</h2>
+    <h3 class="orther">태그 선택자3</h3>
+
+    <div class = "kys"> div 태그 1 </div>
+    <div> div 태그 2 </div>
+
+    <span class="orther"> span 태그 1 </span>
+    <span class="kys"> span 태그 2 </span>
+</body>
+</html>

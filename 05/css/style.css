@@ -1,0 +1,19 @@
+div {
+    color : white; }
+h2:first-letter { 
+    font-size: 30px; 
+    color: red;
+    text-transform: uppercase;
+}
+h3:first-line{
+    color: blue;
+}
+input:focus{
+    background-color: rgb(136, 68, 68);
+}
+input:checked+div.d1 {
+    background-color: gray;
+}
+input:checked+div.d2{
+    background-color: black;
+}

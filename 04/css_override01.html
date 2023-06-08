@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 우선순위</title>
+
+    <!-- 외부에서 적용된 CSS -->
+    <link rel="stylesheet" href="css/override01.css">
+
+    <!-- 내부에서 적용된 CSS -->
+    <style>
+        p1 {
+            background-color: blue;
+        }
+        p2 {
+            font-size: 30px;
+            font-family: 궁서체;
+            color: brown;
+            background-color: aqua !important;
+        }
+        p3 {
+            font-size: 30px;
+            font-family: 궁서체;
+            color: brown;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- 
+        CSS 적용은 상속되고, 누적되어서 적용 SO 같은 항목에 대해서 충돌이 발생될 수 있음.
+            CSS 충돌은 동일한 항목에 대해서 충돌이 발생
+
+        1. 브라우져에 기본 설정된 CSS            <우선순위 : 5>
+        2. 외부(파일)에서 적용된 CSS             <우선순위 : 4> 
+        3. 내부에서 적용된 CSS                   <우선순위 : 3>
+        4. 인라인(태그 내에서)에서 적용된 CSS     <우선순위 : 2>
+        5. !important 적용 CSS                     <우선순위 : 1>
+            : 충돌되는 항목에서 !important를 넣게 됨. (내부 외부 무관)
+            : 되도록 사용을 지양하길 권장함.
+
+        용어 정리 : 
+            - 태그 : <> 내부의 태그
+            - 앨리먼트 : 객체, DOM(Doucument Object Model> 
+                : <><> 태그의 시작부터 끝까지
+                : ex) <P1> CSS가 중복 적용 된 경우 작동 </P1> =>하나의 앨리먼트
+        
+    -->
+
+    <P1> CSS가 중복 적용 된 경우 작동(외부와 내부 충돌 : 내부가 적용) </P1><br><br>
+    <P2 style="background-color: purple;"> CSS가 중복 적용 된 경우 작동(외부 => 내부=> 인라인) </P2><Br><br>
+    <P3 style="background-color: purple;"> CSS가 중복 적용 된 경우 작동(!important를 적용) </P3><br><br>
+
+</body>
+</html>
