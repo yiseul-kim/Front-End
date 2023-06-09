@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            font-family: monospace;
+        }
+        h1 {
+            /* 상자 사이즈 */
+            width: 30%;
+            height: 30px;
+
+            /* 마진 공백 크기 */
+            margin: auto;
+            margin-top: 10px;
+
+            padding: 10px;
+
+            /* 글자 위치 조정 */
+            line-height: 30px; /* 상자 height와 동일하게 해주면 중간*/
+            text-align: center;
+
+            /* 글꼴 */
+            font-weight: bold;
+            font-size: 12pt;
+        }
+        h1.br1 {   
+            border: solid 2px indianred;
+
+            /* 모서리 굴곡 */
+            border-radius: 20%;
+            
+            background-color: black;
+            color: pink;
+        }
+        h1.br2 {
+            border: dotted 2px yellow;
+
+            border-radius: 10px;
+            
+            background-color: green;
+            color: orange;
+        }
+        h1.br3 {
+            border: dashed 2px #C2DEDC;
+
+            border-radius: 40% 20px;
+            
+            background-color: #ECE5C7;
+            color: #116A7B;
+        }
+        h1.br4 {
+            border: double 3px #A7ECEE;
+
+            border-top-left-radius: 20px;
+            
+            background-color: #9AC5F4;
+            color: #FFEEBB;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center;"> radius 샘플 </h3>
+    <hr width="40%" color="#545B77">
+    <!--
+        박스의 네 모서리를 둥글게 처리함.
+    -->
+
+    <h1 class="br1"> 둥근모서리 스타일 예제 1 </h1>
+    <h1 class="br2"> 둥근모서리 스타일 예제 2 </h1>
+    <h1 class="br3"> 둥근모서리 스타일 예제 3 </h1>
+    <h1 class="br4"> 둥근모서리 스타일 예제 4 </h1>
+
+
+
+
+</body>
+</html>

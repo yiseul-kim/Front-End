@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            border: 1px dotted red;
+            background-color: lightcoral;
+            display: block;            
+        }
+        div {
+            border: 1px dotted blue;
+            width: 100px;
+            height: 100px;
+
+            background-color: lightblue;
+
+            /* 인라인으로 처리되면서 width, height 속성이 없어짐*/ 
+            display:inline; 
+
+        }
+        
+        div.div2 {
+            margin: 5px 3px;
+            border: 1px dotted rgb(0, 0, 0);
+            width: 100px;
+            height: 100px;
+
+            background-color: #116A7B;
+
+            /* display : inline-block */
+            display: inline-block; 
+        }
+        div.div3 {
+            margin: 5px 3px;
+            border: 1px dotted yellow;
+            width: 100px;
+            height: 100px;
+
+            background-color: green;
+
+            /* float으로 처리되면서 width, heigth속성을 가지고 left 정렬됨 */
+            /* 단점! 다음 구문이 겹쳐짐 -> float: clear를 사용해야함*/
+            float: left;
+        }
+        
+    </style>
+
+
+
+</head>
+<body>
+    <h3> css display : </h3>
+    <br>
+    <!-- 
+        dispaly : 화면에 출력을 처리 속성
+         inline : 인라인으로 출력
+         block : 블락으로 출력
+         inline-block :인라인으로 처리하면서 라인이 넘으면 블락형식으로 출력
+    -->
+
+    <h3> 인라인 ==> 블락 형식으로 출력 </h3>
+    <!-- 인라인 ==> 블락 형식으로 출력 -->
+    <hr color="skyblue" width="50%" align="left">
+    <span> span - 1 </span>
+    <span> span - 2 </span>
+    <span> span - 3 </span>
+    <span> span - 4 </span>
+    <span> span - 5 </span>
+    <span> span - 6 </span>
+    <span> span - 7 </span>
+    <span> span - 8 </span>
+    <span> span - 9 </span>
+    <span> span - 10 </span>
+    <br><br>
+    
+    <h3>블락 ==> 인라인으로 출력</h3>
+    <!-- 블락 ==> 인라인으로 출력 -->
+    <hr color="skyblue" width="50%" align="left">
+    <div> div-1 </div>
+    <div> div-2 </div>
+    <div> div-3 </div>
+    <div> div-4 </div>
+    <div> div-5 </div>
+    <div> div-6 </div>
+    <div> div-7 </div>
+    <div> div-8 </div>
+    <div> div-9 </div>
+    <div> div-10 </div><br><Br>
+
+    <h3>display: inline-block; 으로 출력 </h3>
+    <!-- Float : left;으로 출력 -->
+    <hr color="skyblue" width="50%" align="left">
+    <div class="div2"> div-1 </div>
+    <div class="div2"> div-2 </div>
+    <div class="div2"> div-3 </div>
+    <div class="div2"> div-4 </div>
+    <div class="div2"> div-5 </div>
+    <div class="div2"> div-6 </div>
+    <div class="div2"> div-7 </div>
+    <div class="div2"> div-8 </div>
+    <div class="div2"> div-9 </div><br><Br>
+    
+
+    <h3>Float : left;으로 출력</h3>
+    <!-- Float : left;으로 출력 -->
+    <hr color="skyblue" width="50%" align="left">
+    <div class="div3"> div-1 </div>
+    <div class="div3"> div-2 </div>
+    <div class="div3"> div-3 </div>
+    <div class="div3"> div-4 </div>
+    <div class="div3"> div-5 </div>
+    <div class="div3"> div-6 </div>
+    <div class="div3"> div-7 </div>
+    <div class="div3"> div-8 </div>
+    <div class="div3"> div-9 </div>
+    
+
+</body>
+</html>

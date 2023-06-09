@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow : 그림자 효과 넣기02</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+
+        /* div박스 안에 넣어서 사용을 편리하게 함 */
+        .img_sum{
+            border: 1px dotted black;
+            width:90%;
+
+            /* margin을 이용해 중앙 배치 */
+            margin:auto;  
+
+            /* text-align: center; */
+
+
+            /* display: flex;
+            justify-self: center; */
+        }
+        
+        img{
+            margin :20px;
+            padding :0.5em;
+            padding-bottom: 0.1em;
+            margin-bottom: 5px;
+
+            /* 디버깅 목적 */
+            /* border : 1px solid red;  */
+            width:  150px; 
+            height: 100px;            
+        }
+
+        /* shadow : 수평(오) | 수직(아래) | 번짐 | 색상 | 삽입효과; */
+        img.shadow1{
+            box-shadow: 10px -10px 20px skyblue ;
+        }
+        .shadow2{
+            box-shadow: 0px 0px 50px black ;
+                        
+        }
+        .shadow3{
+            
+        }       
+        .myimg_div {
+            border: 1px solid red;
+            width: 210px;
+            height: auto;
+
+            text-align: left;
+            float: left;
+        }
+        .ex01{
+            margin-left: 25px;
+        }
+        .ex01_name{           
+            font-size: large;   
+        }
+        .ex01_price{
+            color: red;
+            font-size: medium;
+        }
+        .ex01_ex{
+            font-size: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="img_sum">
+    <h3> Shadow : 그림자 효과 넣기 </h3>
+    <hr width="90%" color="#545B77"> 
+    <!-- 
+        shadow : 수평 그림자(필수) | 수직 그림자 (필수) | 흐림정도(번짐) | 색상 | 삽입효과;
+    -->
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+        <div class="myimg_div">
+            <!-- 이미지-->
+            <img src="img/pic1.jpg" class="shadow1"><br>
+
+            <!-- 제품 설명 -->
+            <div class="ex01">
+                <div class="ex01_name">
+                팽귄 셋트
+                </div>
+                <div class="ex01_price">
+                23,900원
+                </div>
+                <div class="ex01_ex">
+                귀엽고 깜찍한 펭귄 세마리가 함께 모여 춤추고 있습니다. 
+                </div>
+            </div>
+        </div>
+
+        <img src="img/pic2.jpg" class="shadow2">
+        <img src="img/pic3.jpg" class="shadow3">    
+    
+        <img src="img/pic1.jpg" class="shadow1">
+        <img src="img/pic2.jpg" class="shadow2">
+        <img src="img/pic3.jpg" class="shadow3">
+   
+        <img src="img/pic1.jpg" class="shadow1">
+        <img src="img/pic2.jpg" class="shadow2">
+        <img src="img/pic3.jpg" class="shadow3">
+   
+        <img src="img/pic1.jpg" class="shadow1">
+        <img src="img/pic2.jpg" class="shadow2">
+        <img src="img/pic3.jpg" class="shadow3">
+    
+        <img src="img/pic1.jpg" class="shadow1">
+        <img src="img/pic2.jpg" class="shadow2">
+        <img src="img/pic3.jpg" class="shadow3">
+
+    </div>
+    
+    
+
+
+</body>
+</html>
