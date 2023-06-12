@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> css 선택자 : 속성 선택자 </title>
-    <style>
+    <title>CSS 선택자 : 속성 선택자 </title>
+    <style> 
         h1[text] {
             color: red;
             background-color: gray;
         }
         h1[text="attr3"] {
-            color: aqua;
-            font-size: 40px;
+            color:aqua;         /* 충돌 항목    */ 
+            font-size: 40;
         }
-
+    
     </style>
 </head>
 <body>
-    <h3> css 선택자 : 속성 선택자 </h3>
-    <hr color="green">
+    <h3> CSS 선택자 : 속성 선택자 </h3>
+    <hr color="green"> 
     <!--
-        속성 선택자 : 태그의 속성값이 일치하는 것을 선택
-            태그명[속성] { 스타일 지정 }
+        속성 선택자 : 태그의 속성값이 일치하는 것은 선택 
+            태그명[속성] { 스타일 적용 }
 
     -->
 
@@ -30,8 +30,9 @@
     <h1 text="attr1"> text 속성이름 선택자 </h1>
     <h1 text="attr2"> text 속성이름 선택자 </h1>
     <h1 text="attr3"> text 속성이름 선택자 </h1>
-    <h1> text 속성이름이 없는 선택자 </h1>
+    <h1> text 속성이름 없는 선택자 </h1>
 
 
+    
 </body>
 </html>

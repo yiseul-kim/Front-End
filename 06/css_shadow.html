@@ -5,82 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h3{
-            text-align: center;
+    <style> 
+        .fdiv {
+            border : 1px solid red ;
+            width: 90%; 
+            margin: auto; 
+
+
         }
 
-        /* div박스 안에 넣어서 사용을 편리하게 함 */
-        .img_sum{
-            border: 1px solid red;
-            width:90%;
+        img {
+            /* 인라인 태그  : width, height, margin, padding 모두 잘 적용됨 */
+            margin : 20px; 
+            padding : 20px; 
+            /*
+            border : 1px solid red; */   /* 디버깅 목적으로 추가 */ 
 
-            /* margin을 이용해 중앙 배치 */
-            margin:auto;    
+            width : 300px; 
+            height: 300px; 
 
-            text-align: center;
-
-            /* display: flex;
-            justify-self: center; */
+            box-shadow: 10px 10px 30px black; 
         }
-        
-        img{
-            margin :20px;
-            padding :0.5em;
-
-            /* 디버깅 목적 */
-            /* border : 1px solid red;  */
-            width:  150px; 
-            height: 100px;            
+    
+        .shadow1 {
+            box-shadow: 10px 10px 30px black;   /* 오른쪽이동, 아래로이동,번짐정도,색상 */ 
         }
 
-        /* shadow : 수평(오) | 수직(아래) | 번짐 | 색상 | 삽입효과; */
-        img.shadow1{
-            box-shadow: 10px -10px 20px skyblue ;
+        .shadow2 {
+            box-shadow: 10px -10px 30px black;  /* 오른쪽이동, 윗쪽으로이동, 번짐정도, 색상 */
         }
-        .shadow2{
-            box-shadow: 0px 0px 50px black ;
-                        
-        }
-        .shadow3{
-            
-        }       
-
+    
     </style>
-
 </head>
 <body>
-    <div class="img_sum">
-    <h3> Shadow : 그림자 효과 넣기 </h3>
-    <hr width="90%" color="#545B77"> 
-    <!-- 
-        shadow : 수평 그림자(필수) | 수직 그림자 (필수) | 흐림정도(번짐) | 색상 | 삽입효과;
+
+<div class = "fdiv">
+
+    <h3> shadow : 그리자 효과 넣기 </h3>
+    <hr> 
+    <!--
+        box-shadow: 수평 그림자(필수) | 수직 그림자(필수) | 흐림정도 | 색상  | 삽입효과 
+
     -->
-    
-        <img src="img/pic1.jpg" class="shadow1">
-        <img src="img/pic2.jpg" class="shadow2">
-        <img src="img/pic3.jpg" class="shadow3">    
-    
-        <img src="img/pic1.jpg" class="shadow1">
-        <img src="img/pic2.jpg" class="shadow2">
-        <img src="img/pic3.jpg" class="shadow3">
-   
-        <img src="img/pic1.jpg" class="shadow1">
-        <img src="img/pic2.jpg" class="shadow2">
-        <img src="img/pic3.jpg" class="shadow3">
-   
-        <img src="img/pic1.jpg" class="shadow1">
-        <img src="img/pic2.jpg" class="shadow2">
-        <img src="img/pic3.jpg" class="shadow3">
-    
-        <img src="img/pic1.jpg" class="shadow1">
-        <img src="img/pic2.jpg" class="shadow2">
-        <img src="img/pic3.jpg" class="shadow3">
 
-    </div>
-    
-    
 
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+    
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+  
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+  
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+  
+    <img src="img/pic1.jpg" class ="shadow1"> 
+    <img src="img/pic2.jpg" class ="shadow2"> 
+    <img src="img/pic3.jpg" class ="shadow3"> 
+  
+</div>
 
 </body>
 </html>
