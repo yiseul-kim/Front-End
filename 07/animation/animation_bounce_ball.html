@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 애니메이션 만들기  */
+        @keyframes bounce {
+            /* from과 to가 같을때 : form-시작, to-끝 */
+            /* bottom:0은 브라우저의 최하단 */
+            from, to {
+                bottom: 0px;
+                animation-timing-function: ease-out;
+            }
+            50% {
+                bottom: 200px;
+                animation-timing-function: ease-in;
+            }
+        }
+        
+        div {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #213555;
+            border-radius: 10px;
+            
+            /* 스크롤을 내리더라도 위치 고정 */
+            position: fixed;    
+            animation: bounce 1s infinite
+            
+        }        
+
+        #b1 { right: 10px; background-color: #213555; 
+            animation-duration: 2s ;}
+        #b2 { right: 50px; background-color: #4F709C; 
+            animation-duration: 3s ;}
+        #b3 { right: 90px; background-color: #7689a3; 
+            animation-duration: 5s ;}
+        #b4 { right: 130px; background-color: #D8C4B6; 
+            animation-duration: 7s ;}
+        #b5 { right: 170px; background-color: #F5EFE7; 
+            animation-duration: 9s ;}
+     
+    </style>
+</head>
+<body>
+    
+    <div id="b1"></div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <div id="b4"></div>
+    <div id="b5"></div>
+    
+</body>
+</html>

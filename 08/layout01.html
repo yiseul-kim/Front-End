@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px; padding: 0;            
+            text-align: center;
+        }
+        header {
+            border: 1px solid red;
+            width: 800px;
+            height: 60px;
+            margin: 2px;
+        }        
+        main {
+            width: 800px;
+            height: 398px;
+            border: 1px solid black;
+            margin: 2px;            
+        }
+        footer {
+            width: 800px;
+            height: 60px;
+            margin: 2px;
+            border: 1px solid red;
+        }
+        aside {
+            width: 175px;
+            /* 주로 height는 auto로 둠, 지금은 내용이 비어서 지정 */
+            height: 398px;
+            border: 1px solid blue;
+            margin: 2px;
+            float: left;
+        }
+        section{            
+            border: 1px solid brown;
+            width: 50px;
+            height: 150px;
+            margin: 2px;
+            margin-left: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        layout: 한 페이지를 블락을 나누어서 처리 
+            - header : 최상단, 회사 로고, 메뉴 
+                    - jsp : 별도의 파일을 만들고 include를 사용해서 처리
+                    - timeleaf : layout으로 처리
+                    - React : 컴포넌트로 처리 
+            - main : 컨텐츠 내용 
+            - footer : 최하단, 회사 주소, 전화번호 , 사업자 등록번호 등 
+            - header & footer는 모든 페이지에 적용
+
+            - aside : 왼쪽, 오른쪽 추가적인 메뉴 
+            - nav : 메뉴를 처리( 검색 엔진에서 노출이 쉽게됨 )
+            - section : 컨텐츠의 블락을 만듬 
+            - article : 작은 컨텐츠 
+    -->
+
+    <header>
+        상단 헤더 
+        <nav>
+            상단 메뉴
+        </nav>
+    </header>
+  
+    
+    <main>
+        <aside>
+            <nav>
+                좌측 메뉴 
+            </nav>        
+        </aside>
+        메인 컨텐츠
+        <section>
+            컨텐츠1
+        </section>
+        <section>
+            컨텐츠2
+        </section>
+    </main>
+    <footer>
+        최하단 컨텐츠
+    </footer>
+
+</body>
+
+</html>

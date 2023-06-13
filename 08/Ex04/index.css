@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px dotted green;
+}
+header, main, footer{
+    width: 90%;
+    height: 80px;    
+}
+img{
+    float: left;
+}
+#moto {
+    margin-top: 30px;
+}
+h6 {
+    float: right;
+    margin-top: 30px;
+}
+
+
+main {
+    margin-top: 20px;
+    height: auto;
+}
+
+
+nav {
+    overflow: hidden;
+    object-fit: cover;
+}
+ul>li{
+    list-style: none;
+    float: right;
+    padding-right: 10px;
+    width: 22%;
+}
+
+#section01>img {
+    margin-top: 20px;
+    width: 33%;
+    height: 100px;
+    object-fit:cover;
+    background-color: rgb(11, 129, 158);
+}
+article {
+    width: 30%;
+}
+
+div {
+    width: 33%;
+    position: absolute;
+}

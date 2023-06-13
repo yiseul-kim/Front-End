@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #warp {
+            width: 90%;
+            /* div 박스 자체 중앙 배치  */
+        
+            margin: 0 auto;
+            border: 1px solid #AEE2FF;
+
+            /* div 박스 내부의 아이템의 배치  */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        header,
+        main,
+        footer {
+            width: 90%;
+            height: 80px;
+            background-color: #E6FFFD;
+            border: 1px dotted #B799FF;
+        }
+
+        main {
+            height: 600px;
+            background-color: #ACBCFF;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        넓이 : % , em(배율) 을 이용하여 크기 조정 
+            - 웹페이지의 크기에 따라 달라지는 반응형웹사이트 완성!
+    -->
+    <div id="warp">
+        <header>
+            헤더 컨텐츠
+        </header>
+
+        <main>
+            메인 컨텐츠
+        </main>
+
+        <footer>
+            푸터 컨텐츠
+        </footer>
+    </div>
+</body>
+
+</html>
