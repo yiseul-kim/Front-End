@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        #wrap { color: white; text-align: center; line-height: 100px; font-size: 20px;
+            text-transform: uppercase;}
+
+        #header-wrap {width: 100%; height: 100px; background-color: #465881;}
+        #banner-wrap {width: 100%; height: 300px; background-color: #00909E ;}
+        #contents-wrap {width: 100%; height: 500px; background-color: #C9D1D3 ;}
+        #footer-wrap {width: 100%; height: 100px; background-color: #395a9c ;}
+        /* 위 아래 같은 문장 = width:100%:기본값 / height 자식이 지정되어있으며 부모 안적어도 ㄱㅊ */
+        /* #header-wrap { background-color: #465881;}
+        #banner-wrap { background-color: #00909E ;}
+        #contents-wrap { background-color: #C9D1D3 ;}
+        #footer-wrap { background-color: #395a9c ;} */
+        
+        .header-container {margin: 0 auto; width: 1000px;  height: 100px; background-color: #2e3953;}
+        .banner-wrap {margin: 0 auto; width: 1000px;  height: 300px; background-color: #02626b ;}
+        .contents-wrap {margin: 0 auto; width: 1000px;  height: 500px; background-color: #a1a8aa;}
+        .footer-wrap {margin: 0 auto; width: 1000px;  height: 100px; background-color: #263c68;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header-wrap">
+            <div class="header-container">header</div>
+        </div>
+        <div id="banner-wrap">
+            <div class="banner-wrap">banner</div>
+        </div>
+        <div id="contents-wrap">
+            <div class="contents-wrap">contents</div>
+        </div>
+        <div id="footer-wrap">
+            <div class="footer-wrap">footer</div>
+        </div>
+    </div>
+</body>
+</html>

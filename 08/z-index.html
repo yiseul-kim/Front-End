@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        z index : 레이어 / 숫자가 클수록 앞으로 나옴
+            - 주의! position속성이 static(기본)인 요소는 z-index가 안먹음
+                - 사용을 위해 position속성을 static이외의 요소로 변경해주어야함.
+            - 음수도 가능(-) -1은 position:static보다 뒤로감 어느것보다 뒤로감
+    -->
+    
+    <div id="box1"> box # 1 </div>
+    <div id="box1"> box # 2 </div>
+    <div id="box1"> box # 3 </div>
+</body>
+</html>
