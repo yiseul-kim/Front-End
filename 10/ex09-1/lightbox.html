@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lightbox</title>
+    <style>
+        .row1 { 
+            margin: 0 auto; width: 420px;}
+        .row1 ul li { 
+            list-style-type: none;
+            display: inline-table;            
+            }        
+        .row1 ul {  margin: 0; padding: 0;}
+
+        #lightPics {  
+            position: fixed;
+            width: 100%; height: 100%;
+            top: 0; left: 0;
+            margin: 0; padding: 0; 
+            background-color: rgba(0,0,0,0.7);
+            display: none;} 
+
+        #lightPics ul img { 
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);}
+    </style>
+</head>
+<body>
+
+    <div class="row1">
+        <ul>
+            <li> <img class="pic" src="images/tree-1-thumb.jpg" alt="pic1"></li>
+            <li> <img class="pic" src="images/tree-2-thumb.jpg" alt="pic2"></li>
+            <li> <img class="pic" src="images/tree-3-thumb.jpg" alt="pic3"></li>
+            <li> <img class="pic" src="images/tree-4-thumb.jpg" alt="pic4"></li>
+            <li> <img class="pic" src="images/tree-5-thumb.jpg" alt="pic5"></li>
+            <li> <img class="pic" src="images/tree-6-thumb.jpg" alt="pic6"></li>
+        </ul>
+    </div>
+
+    <div id="lightPics">
+        <ul>
+            <li><img src="images/tree-1.jpg" alt="bigpic"></li>
+        </ul>
+    </div>
+    
+    <script>
+        var pics2 = document.getElementsByClassName("pic"); 
+        var lightPic = document.getElementsByClassName
+        var lightboxImage2
+    </script>
+</body>
+</html>
