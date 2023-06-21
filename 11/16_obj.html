@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+        function add(){
+            //img 앨리맨트 생성
+            let img = document.createElement('img');
+
+            // 태그의 속성값을 정의 : setAttribute()
+            img.setAttribute('src', 'img/coffee-blue.jpg');
+            img.width=300;
+            img.height=300;
+
+            //body에 이미지를 추가함. 
+            document.body.appendChild(img);
+        }
+    
+    </script>
+</head>
+<body>
+    
+    <a href="#" onclick="add()"> [이미지 추가] </a>
+
+
+</body>
+</html>

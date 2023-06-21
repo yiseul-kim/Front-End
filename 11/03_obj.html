@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="carname"> </p>
+    <p id="carcolor"> </p>
+    <p id="carspeed"> </p>
+
+    
+    <script>
+        let car = {
+            name : 'sonata',
+            speed : 50,
+            color : 'white',
+            start : function () { return this.speed + 10 ;
+            }
+        };
+
+        //엘리멘트를 객체화해서 사용  
+        let cName = document.getElementById('carname');
+        let cColor = document.getElementById('carcolor');
+        let cSpeed = document.getElementById('carspeed');
+
+        cName.innerHTML = car.name;
+        cColor.innerHTML = car.color;
+        cSpeed.innerHTML = car.start();
+    </script>
+    
+</body>
+</html>

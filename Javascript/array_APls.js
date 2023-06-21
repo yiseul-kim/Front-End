@@ -1,22 +1,23 @@
+// 1. join : 값을 하나의 배열로 합치기
 {
     const fruits = ['사과','바나나','딸기'];
     const result = fruits.join('|')
     console.log(result);
 }
-
+// 2. split : 각각의 배열로 나누기 
 {
     const fruits = '사과, 바나나, 딸기';
     const result = fruits.split(',');
     console.log(result);
 }
-
+// 3. reverse : 거꾸로 배열 재배치
 {
     const array = [1,2,3,4,5];
     const result = array.reverse();
     console.log(result);
     console.log(array);
 }
-
+// 4. slice : 원하는 부분 삭제 및 남은 배열 저장 
 {
     const array = [1,2,3,4,5];
     const result = array.slice(2,5);
