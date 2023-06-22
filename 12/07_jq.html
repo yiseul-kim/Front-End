@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    
+    <script defer>
+        $(document).ready(function(){
+           $('button.add').click(function(){
+                $('h1,h2').addClass('blue'); // addClass(클래스 추가)/ ('blue'): blue클래스 
+                $('div, p').addClass('important');
+           })
+
+           $('button.remove').click(function(){
+                $('h1,h2').removeClass('blue'); // addClass(클래스 추가)/ ('blue'): blue클래스 
+                $('div, p').removeClass('important');
+           })
+           
+           $('button.togleClick').click(function(){
+                $('h1,h2').toggleClass('blue'); // addClass(클래스 추가)/ ('blue'): blue클래스 
+                $('div, p').toggleClass('important');
+           })
+
+        });
+    </script>
+    
+    <style>
+
+        /* jquery를 사용해서 body내의 엘리먼트에 적용 예정 */
+        .blue{ color: blue; } 
+        .important { font-weight: bolder; font-size: xx-large;}
+    </style>
+    
+</head>
+<body>
+    <h1> HTML1 </h1>
+    <h2> CSS2 </h2>
+    <P> 자바스크립트 </P>
+    <div> 제이쿼리 </div> <br>
+    <button class="add"> CSS 적용 </button>
+    <button class="remove"> CSS 적용 해제 </button>
+    <button class="togleClick"> taggle 적용 </button>
+
+    <!-- 
+        JQuery 에서 CSS 컨트롤 
+            - addClass() : 요소(element)에 클릭으로 class를 추가함. 
+            - removeClass() : 요소(element)에 클릭으로 class를 제거함.
+
+            - toggleClass() : 요소(element)에 클릭으로 class를 추가,제거를 반복함.
+
+            - css : 선택한 요소의 style속성을 설정하거나 반환한다. 
+            - width : 가로크기 반환 (margin, paddign, border등은 제외)
+            - height : 세로크기 반환 (margin, paddign, border등은 제외)
+
+    -->
+
+
+     
+</body>
+</html>
